@@ -1,0 +1,5 @@
+<ul>
+<li>FEATURE: <code>@Jacksonized</code> now supports both Jackson2 and Jackson3; you'll get a warning until you configure which one (or even both!) you want lombok to generate. #3950.</li>
+<li>BUGFIX: On JDK25, <code>val</code> and <code>@ExtensionMethod</code> could sometimes cause erroneous errors (in that you see errors but compilation succeeds anyway) using javac. #3947.</li>
+<li>BUGFIX: <code>@Jacksonized</code> + fields marked <code>transient</code> would result in those transient fields being serialised which is surprising (and thus undesired) behaviour. #3936.</li>
+</ul>
